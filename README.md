@@ -20,14 +20,15 @@ fm = 1*10^-15 m
 am = 1*10^-18 m
 Además unidad_1 será la cantidad de metros
 
-1.	Pedir unidad_1 metros y guardarla
-1.1.	Si unidad_1 > 0 mostrar “Convertir unidad_1 metros a: prefijo (Em, Pm, Tm…)“
-1.2.	Guardar prefijo (Em, Pm, Tm…)
-1.3.	Multiplicación unidad_1 por valor de prefijo y guardar operación
-1.4.	Guardar multiplicación
+Algoritmo
+Pedir unidad_1 metros y guardarla
+  Si unidad_1 > 0 mostrar “Convertir unidad_1 metros a: prefijo (Em, Pm, Tm…)“
+  Guardar prefijo (Em, Pm, Tm…)
+  Multiplicación unidad_1 por valor de prefijo y guardar operación
+  Guardar multiplicación
 
-2.	Imprimir multiplicación.
+Imprimir multiplicación.
 
-3.	Mostrar “¿Deseas ver cómo se calculó? Sí / No”
-3.1. Si Sí imprimir operación
-3.2. Si No Continuar
+Mostrar “¿Deseas ver cómo se calculó? Sí / No”
+  Si Sí imprimir operación
+  Si No Continuar
