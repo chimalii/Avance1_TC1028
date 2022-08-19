@@ -22,7 +22,7 @@ Además unidad_1 será la cantidad de metros
 
 Algoritmo
 Pedir unidad_1 metros y guardarla
-  Si unidad_1 > 0 mostrar “Convertir unidad_1 metros a: prefijo (Em, Pm, Tm…)“
+	Si unidad_1 > 0 mostrar “Convertir unidad_1 metros a: prefijo (Em, Pm, Tm…)“
   Guardar prefijo (Em, Pm, Tm…)
   Multiplicación unidad_1 por valor de prefijo y guardar operación
   Guardar multiplicación
