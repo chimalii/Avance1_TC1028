@@ -1,16 +1,21 @@
-def metros(n1):
+def metros(m):
     if opcion == 1 and opcion_2 == 1:
-        m_in = n1 * 39.3701
-        return m_in 
-    elif opcion == 1 and opcion_2 == 2:
-        m_ft = n1 * 3.28084
-        return m_ft
-    elif opcion == 1 and opcion_2 == 3:
-        m_mi = n1 * 0.000621371
-        return m_mi
-    elif opcion == 1 and opcion_2 == 4:
-        m_yd = n1 * 1.09361
-        return m_yd
+        return m * 39.3701 
+# elif opcion == 1 and opcion_2 == 2: 
+    elif opcion_2 == 2:
+        return m * 3.28084
+    elif opcion_2 == 3:
+        return m * 0.000621371
+    elif opcion_2 == 4:
+        return m * 1.09361
+
+def kilogramos(kg):
+    if opcion == 2 and opcion_2 == 1:
+        return kg * (6.022 * (10**26))
+    elif opcion_2 == 2:
+        return kg * 35.274
+    elif opcion_2 == 3:
+        return kg * 2.20462
 
 print("""
 ¿Qué magnitud quieres convertir?
@@ -36,7 +41,8 @@ if (opcion == 1):
 elif (opcion == 2):
     print("""
     ¿Qué unidades quieres convertir?
-    1. kg - on
+    1. kg - uma
+    2. kg - on
     2. kg - lb
     """)
 
@@ -95,22 +101,28 @@ elif (opcion == 7):
     """)
 
 opcion_2 = int(input())
-if opcion_2 == 1:
-    n1 = float(input("Introduce metros: "))
-    print(f"{n1} m = {metros(n1)} in")
+if opcion == 1 and opcion_2 == 1:
+    m = float(input("Introduce metros: "))
+    print(f"{m} m = {metros(m)} in")
 
-elif opcion_2 == 2:
-    n1 = float(input("Introduce metros: "))
-    print(f"{n1} m = {metros(n1)} ft")
+elif opcion == 1 and opcion_2 == 2:
+    m = float(input("Introduce metros: "))
+    print(f"{m} m = {metros(m)} ft")
 
-elif opcion_2 == 3:
-    n1 = float(input("Introduce metros: "))
-    print(f"{n1} m = {metros(n1)} yd")
+elif opcion == 1 and opcion_2 == 3:
+    m = float(input("Introduce metros: "))
+    print(f"{m} m = {metros(m)} mi")
 
-elif opcion_2 == 3:
-    n1 = float(input("Introduce metros: "))
-    print(f"{n1} m = {metros(n1)} mi")
+elif opcion == 1 and opcion_2 == 4:
+    m = float(input("Introduce metros: "))
+    print(f"{m} m = {metros(m)} yd")
 
-elif opcion_2 == 3:
-    n1 = float(input("Introduce metros: "))
-    print(f"{n1} m = {metros(n1)} yd")
+if opcion == 2 and opcion_2 == 1:
+    kg = float(input("Introduce kilogramos: "))
+    print(f"{kg} kg = {kilogramos(kg)} uma")
+elif opcion == 2 and opcion_2 == 2:
+    kg = float(input("Introduce kilogramos: "))
+    print(f"{kg} kg = {kilogramos(kg)} on")
+elif opcion == 2 and opcion_2 == 3:
+    kg = float(input("Introduce kilogramos: "))
+    print(f"{kg} kg = {kilogramos(kg)} lb")
